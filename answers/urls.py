@@ -3,5 +3,5 @@ from rest_framework import routers
 from answers.views import answersViewSet
 
 router = routers.DefaultRouter()
-router.register(r"answers", answersViewSet, "answers")
+router.register(r"answers", answersViewSet, "answers") #quien es el encargado de responder la ruta
 

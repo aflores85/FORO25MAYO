@@ -9,9 +9,13 @@ from drf_yasg.views import get_schema_view
 from drf_yasg import openapi
 
 from answers.urls import router as answers_Router
+from discussion.urls import router as discussion_Router
+#traer todos los router de la aplicacion.
+
 
 router = routers.DefaultRouter()
 router.registry.extend(answers_Router.registry)
+router.registry.extend(discussion_Router.registry)
 
 schema_view = get_schema_view(
     openapi.Info(
