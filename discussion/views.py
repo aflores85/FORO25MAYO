@@ -1,5 +1,5 @@
 from rest_framework import viewsets
-from answers.models import discussion
+from discussion.models import discussion
 from discussion.models import discussionSerializer
 
 class discussionViewSet(viewsets.ModelViewSet):

@@ -22,7 +22,7 @@ class questions(models.Model):
            verbose_name_plural = "PREGUNTAS"
     
         
-class forumSerializer(serializers.ModelSerializer):
+class questionsSerializer(serializers.ModelSerializer):
         class Meta:
             model = questions
             fields = "__all__"
