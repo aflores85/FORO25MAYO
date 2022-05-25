@@ -1,4 +1,18 @@
 #25052022 SE GENERA NUEVO PROYECTO
+#…or create a new repository on the command line
+#echo "# FORO25MAYO" >> README.md
+#git init
+#git add README.md
+#git commit -m "first commit"
+#git branch -M main
+#git remote add origin https://github.com/aflores85/FORO25MAYO.git
+#git push -u origin main
+#…or push an existing repository from the command line
+#git remote add origin https://github.com/aflores85/FORO25MAYO.git
+#git branch -M main
+#git push -u origin main
+
+
 
 # fullstack_2022_1c
 
