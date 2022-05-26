@@ -28,20 +28,22 @@ fetch('https://httpbin.org/get?param1=1234&param2=3456').then((response) => {
 
     const o1 = {
         atr1: 'uno',
-        atr2: 'dos'
+        atr2: 'dos',
+        atr3: 'tres'
     }
 
-    let headers = new headers();
-headers.set('content-type','application/jason')
+    let headers = new Headers();
+    headers.set('Content-type','application/json')
 
     fetch('https://httpbin.org/post', {
     method: 'POST',
+    headers: headers,
     body: JSON.stringify(o1)
     }).then((response) => {
     return response.json()
     }).then((data) => {
-        console.log('En POST')
-        console.log(data.form)
+      console.log('En POST')
+      console.log(data)
     })
 
 
