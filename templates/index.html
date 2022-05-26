@@ -7,18 +7,25 @@
 <body>
     <h1> BIENVENIDO AL FORO</h1>
     <div id="app"></div>
+
+
     <script>
-        const url = 'https://swapi.dev/api/asnwer/1'
+        
+        async function consultar() {
+            const url = 'https://swapi.dev/api/asnwer/1'
+            
+            let response = await fetch(url);
+        }
+         async function hacer() {
+        
+            consle.log('paso 1.')
+            await consultar ()
+        
+            console.log('paso 2.')
+        }      
+              
 
-        consle.log('paso 1.')
 
-        fetch(url).then((response) => {
-        console.log(response)
-        return reponse.json()
-        }).then((texto) => {
-       console.log(texto)
-        })
-        console.log('paso 2.')
 
 </script>   
 </body>
