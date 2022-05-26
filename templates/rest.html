@@ -18,9 +18,33 @@
 
        
     */
-fetch('https://httpbin.org/get').then((response) => {
+
+        // URL encoded
+fetch('https://httpbin.org/get?param1=1234&param2=3456').then((response) => {
     return response.json()
-    }).then((data) => {console.log(data)})
+    }).then((data) => {
+        console.log(data.args)
+    })
+
+    const o1 = {
+        atr1: 'uno',
+        atr2: 'dos'
+    }
+
+    let headers = new headers();
+headers.set('content-type','application/jason')
+
+    fetch('https://httpbin.org/post', {
+    method: 'POST',
+    body: JSON.stringify(o1)
+    }).then((response) => {
+    return response.json()
+    }).then((data) => {
+        console.log('En POST')
+        console.log(data.form)
+    })
+
+
    
     </script>
     </body>
